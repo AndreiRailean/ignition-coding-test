@@ -5,6 +5,7 @@ import { Box, Stack, Link } from "@chakra-ui/react"
 import Home from "./Home"
 import SimpleForm from "./SimpleForm"
 import ButtonGrid from "./ButtonGrid"
+import FixMe from "./FixMe"
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
           <Link to="/grid" as={RouterLink} color="blue">
             Button Grid
           </Link>
+          <Link to="/fixme" as={RouterLink} color="blue">
+            Fix Me
+          </Link>
         </Stack>
 
         <Box>
@@ -28,6 +32,7 @@ export default function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="simple" element={<SimpleForm />} />
             <Route path="grid" element={<ButtonGrid />} />
+            <Route path="fixme" element={<FixMe />} />
           </Routes>
         </Box>
       </Stack>
